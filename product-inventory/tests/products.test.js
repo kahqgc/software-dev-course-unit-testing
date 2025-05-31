@@ -20,6 +20,10 @@ describe("apply dicount function", () => {
     test("handles edge case with price of 0", () => {
         expect(calculateDiscount(0, 0.2)).toBe(0);
     });
+
+    test("accepts numbers for price not strings",() =>{
+        expect(calculateDiscount(100,"string")).toBe(null);
+    })
 })
 
 const cat = "Nick";
