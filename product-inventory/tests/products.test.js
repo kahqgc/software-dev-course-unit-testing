@@ -21,6 +21,7 @@ describe("apply dicount function", () => {
         expect(calculateDiscount(0, 0.2)).toBe(0);
     });
 
+//This test case was added later
     test("accepts numbers for price not strings",() =>{
         expect(calculateDiscount(100,"string")).toBe(null);
     })
